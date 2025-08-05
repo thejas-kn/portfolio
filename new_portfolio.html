@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        portfolio
+    </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: darkslateblue;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            padding-right: 20px;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: aqua;
+        }
+
+        /*dropdown prgrm*/
+        nav li ul {
+            display: none;
+            position: absolute;
+            top: 48px;
+            right: 0;
+            background-color: darkslateblue;
+            flex-direction: column;
+            min-width: 160px;
+            z-index: 1000;
+        }
+
+        nav li:hover ul {
+            display: flex;
+        }
+
+        nav li ul li a {
+            padding: 10px 16px;
+            text-align: left;
+        }
+
+        .image-text-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background-color: #f4f4f4;
+            gap: 40px;
+        }
+
+        .section-image {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-text {
+            max-width: 600px;
+            font-family: Arial, sans-serif;
+        }
+
+        .section-text h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .skills-section {
+            display: flex;
+            gap: 60px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skills-column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .skills-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .section-text h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: darkslateblue;
+        }
+
+
+
+        .site-footer {
+            background-color: darkslateblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .footer-contact p {
+            margin: 5px 0;
+        }
+
+        .footer-contact a {
+            color: lightblue;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">My Portfolio</div>
+
+                <ul>
+                    <li>
+                        <a href="#">ACADEMICS</a>
+                        <ul>
+                            <li><a href="./images/THEJAS_10.png">CLASS X</a></li>
+                            <li><a href="./images/THEJAS_12.png">CLASS XII</a></li>
+                            <li><a href="./images/THEJAS_BTECH.png">B TECH</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PROJECTS</a>
+                        <ul>
+                            <li><a href="#">WEARABLE FALL DETECTOR</a></li>
+                            <li><a href="#">DIGITAL THERMOMETER</a></li>
+                            <li><a href="#">ML BASED FARM PROTECTION SYSTEM</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CERTIFICATIONS</a>
+                        <ul>
+                            <li><a href="./python_crash.html">Crash Course On Pyhton</a></li>
+                            <li><a href="./autonomous_driving.html">Autonomous Driving System And ML Workshop</a></li>
+                            <li><a href="./robotics.html">Robotics Workshop</a></li>
+                            <li><a href="./self_driving_ev.html">Self Driving Electric Vehicles Workshop</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact_details.html">CONTACT</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+    <section class="image-text-section">
+        <img src="./images/THEJAS_PIC.JPEG" alt="Profile Image" class="section-image">
+        <div class="section-text">
+            <h2>Hi, I'm Thejas</h2>
+            <p>A passionate  electronics and communication engineering graduate with interest in machine learning, IoT, and Web Development. This portfolio showcases my academic
+                background, projects, and contact information.</p>
+
+            <div class="skills-section">
+                <div class="skills-column">
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>Arduino</li>
+                        <li>Machine Learning</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SQL</li>
+                        <li>OOPS Concepts</li>
+                    </ul>
+                </div>
+
+                <div class="skills-column">
+                    <h3>Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li>Leadership</li>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Adaptability</li>
+                        <li>Time Management</li>
+                        <li>Problem Solving</li>
+                        <li>Networking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+        <p> 2025 Thejas Jayaprakash. All rights reserved.</p>
+        <div class="footer-contact">
+            <p> +91 85473 75773</p>
+            <p> thejasjayaprakash@gmail.com</p>
+            <p>
+                <a href="https://github.com/thejas-kn">GitHub</a> |
+                <a href="https://www.linkedin.com/in/thejasjp">LinkedIn</a>
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
